@@ -222,6 +222,124 @@ footer{padding-block:40px;font-size:13px;color:var(--muted)}
   .film{aspect-ratio:4/5}
 }
 @media (max-width:860px) and (min-width:560px){.funnel{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* ---------- Part 2 ---------- */
+.part-band{background:var(--ink);color:var(--bg)}
+.part-band .wrap{padding-block:64px;display:grid;gap:18px}
+.part-band .eyebrow{color:color-mix(in srgb,var(--bg) 65%,transparent)}
+.part-title{font-family:var(--f-display);font-size:clamp(30px,5vw,56px);line-height:1.12;text-wrap:balance}
+.answers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:color-mix(in srgb,var(--bg) 25%,transparent);border-radius:10px;overflow:hidden;margin-top:10px}
+.answers div{background:var(--ink);padding:16px 18px;display:grid;gap:4px}
+.answers span{font-size:12px;color:color-mix(in srgb,var(--bg) 60%,transparent)}
+.answers b{font-size:17px;color:var(--bg)}
+.define{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1.4fr);gap:18px;align-items:stretch}
+.dcol{border-radius:10px;padding:22px;display:grid;gap:10px;align-content:start}
+.dcol.bad{background:var(--paper);border:1px dashed var(--line)}
+.dcol.bad ul{margin:0;padding-left:18px;color:var(--muted);text-decoration:line-through}
+.dcol.good{background:var(--tarp);color:var(--tarp-ink)}
+.dcol.good .eyebrow{color:color-mix(in srgb,var(--tarp-ink) 75%,transparent)}
+.dcol.good ol{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.dcol.good li{display:grid;grid-template-columns:56px 1fr;gap:10px;align-items:baseline}
+.dcol.good li b{font-family:var(--f-display);font-weight:400;font-size:22px}
+.define .arrow{display:grid;place-items:center;font-size:32px;color:var(--muted)}
+.insight{margin-top:18px;display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:18px 20px;font-size:15px}
+.pos-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:start}
+.pos-map{margin-top:0}
+.pos-map text{font-size:11px}
+.ladder{display:grid;gap:10px}
+.rung{display:grid;grid-template-columns:118px 1fr;gap:12px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.rung>span{font-size:17px;font-weight:600}
+.rung.hi{border-color:var(--tarp)}
+.rung.hi>span{color:var(--tarp)}
+.rung p{font-size:13px;color:var(--muted)}
+.why3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+.why3>div{border-top:3px solid var(--ink);padding-top:12px;display:grid;gap:6px;font-size:14px}
+.why3 p{color:var(--muted)}
+.space-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px;align-items:start}
+.floor{margin-top:0}
+.floor text{font-size:12px}
+.mood{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.sw{border-radius:8px;padding:16px 14px;font-weight:700;display:grid;gap:2px;min-height:86px;align-content:end}
+.sw small{font-weight:400;font-size:12px;opacity:.85}
+.mood-rules{grid-column:1/-1;margin:6px 0 0;padding-left:18px;display:grid;gap:6px;font-size:14px}
+.tgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px}
+.tcard{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:8px;align-content:start;font-size:14px}
+.tcard>b{font-family:var(--f-display);font-weight:400;font-size:26px}
+.tcard p{color:var(--muted)}
+.tcard.first{background:var(--tag);color:var(--tag-ink);border-color:var(--tag)}
+.tcard.first p,.tcard.first .eyebrow{color:var(--tag-ink)}
+.ms{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px}
+.ms-formula{font-family:var(--f-display);font-size:22px;line-height:1.4;margin:8px 0}
+.ms-formula span{color:var(--tarp)}
+.ms-bars{display:grid;gap:10px;align-content:start}
+.msr{display:grid;grid-template-columns:40px 1fr auto;gap:10px;align-items:center;font-size:13px}
+.msr .b{height:12px;background:var(--soft);border-radius:6px;overflow:hidden}
+.msr .b span{display:block;height:100%;background:var(--tarp)}
+.road{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.phase{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:18px;display:grid;gap:8px;align-content:start;font-size:14px;min-width:0}
+.phase .ph{font-family:var(--f-mono);font-size:12px;color:var(--tarp);font-weight:600}
+.phase .when{font-size:12px;color:var(--muted)}
+.phase>b{font-family:var(--f-display);font-weight:400;font-size:22px}
+.phase p{color:var(--muted)}
+.gate{font-size:12px;border-radius:6px;padding:8px 10px}
+.gate.go{background:color-mix(in srgb,var(--ok) 14%,transparent)}
+.gate.stop{background:color-mix(in srgb,var(--warn) 14%,transparent)}
+.money-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.mtable{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:10px;align-content:start;min-width:0}
+.mtable table{min-width:0;font-size:14px}
+.mtable td{padding:9px 4px}
+.mtable td.r{text-align:right;white-space:nowrap}
+.mtable tr.sum td{font-weight:700;border-top:2px solid var(--ink)}
+.mtable tr.sum.hi td{background:color-mix(in srgb,var(--tag) 22%,transparent)}
+.lease{margin-top:18px;background:var(--soft);border-radius:10px;padding:20px;display:grid;gap:8px;font-size:15px}
+.board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.mcat{background:var(--ink);color:var(--bg);border-radius:10px;padding:18px;display:grid;gap:10px;align-content:start;min-width:0}
+.mcat .eyebrow{color:var(--tag)}
+.mcat.hi{background:var(--tarp);color:var(--tarp-ink)}
+.mcat.hi .eyebrow{color:var(--tarp-ink)}
+.mcat ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px}
+.mcat li{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dotted color-mix(in srgb,currentColor 30%,transparent);padding-bottom:6px}
+.mcat i{font-style:normal;font-family:var(--f-mono);white-space:nowrap}
+.rev{display:grid;gap:14px}
+.revrow{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:center}
+.yr{display:grid;font-weight:600}
+.yr small{font-weight:400;color:var(--muted);font-size:12px}
+.stack{display:flex;height:46px;border-radius:8px;overflow:hidden;font-size:12px;min-width:0}
+.stack span{display:flex;align-items:center;padding:0 8px;color:#fff;white-space:nowrap;overflow:hidden}
+.pnl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.pnl>div{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:18px;display:grid;gap:6px;font-size:13px}
+.pnl b{font-size:28px;color:var(--tarp)}
+.pnl p{color:var(--muted)}
+.exit-t td{vertical-align:top}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.pill.no{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.pill.mid{background:var(--soft);color:var(--muted)}
+.pill.yes{background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok)}
+.exit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:18px;margin-top:18px}
+.signals,.exit-flow{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:10px;align-content:start}
+.signals ol{margin:0;padding-left:20px;display:grid;gap:6px;font-size:14px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
+.flow span{background:var(--soft);border-radius:6px;padding:8px 10px}
+.flow span.end{background:var(--tarp);color:var(--tarp-ink)}
+.flow i{font-style:normal;color:var(--muted)}
+.debate{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.db{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:8px;align-content:start;font-size:14px}
+.db .topic{font-family:var(--f-mono);font-size:12px;color:var(--tarp);font-weight:600}
+.db .res{border-top:1px dashed var(--line);padding-top:8px;font-weight:600}
+.layers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.layers>div{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:8px;align-content:start;font-size:14px}
+.layers .mono{font-size:30px;font-weight:600;color:var(--tarp)}
+.layers p{color:var(--muted)}
+.video-wrap{border-radius:14px;overflow:hidden;background:#0B0D10;aspect-ratio:16/9;max-width:100%}
+.video-wrap video{width:100%;height:100%;display:block}
+@media (max-width:860px){
+  .answers{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .define,.pos-grid,.space-grid,.tgrid,.ms,.road,.money-grid,.pnl,.exit-grid,.debate,.layers,.why3{grid-template-columns:minmax(0,1fr)}
+  .define .arrow{transform:rotate(90deg)}
+  .board{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .revrow{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:520px){.board{grid-template-columns:minmax(0,1fr)}.answers{grid-template-columns:minmax(0,1fr)}.stack span{font-size:10px;padding:0 4px}}
+
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -236,7 +354,19 @@ footer{padding-block:40px;font-size:13px;color:var(--muted)}
     <a href="#top3">TOP 3</a>
     <a href="#premortem">반론 검증</a>
     <a href="#concept">카페 컨셉</a>
-    <a href="#film">프로모 필름</a>
+    <a href="#part2"><b>Part 2 전략</b></a>
+    <a href="#define">뜬다의 정의</a>
+    <a href="#position">포지셔닝</a>
+    <a href="#space">공간</a>
+    <a href="#connect">동네 연결</a>
+    <a href="#target">타깃·M/S</a>
+    <a href="#roadmap">로드맵</a>
+    <a href="#money">CAPEX·OPEX</a>
+    <a href="#menu">메뉴</a>
+    <a href="#revenue">매출</a>
+    <a href="#exit">엑싯</a>
+    <a href="#council">토론</a>
+    <a href="#film">영상</a>
     <a href="#sources">출처</a>
   </div>
 </nav>
@@ -270,7 +400,7 @@ footer{padding-block:40px;font-size:13px;color:var(--muted)}
     </div>
 
     <div class="oneliner">
-      <span class="price" style="position:static;flex:none">컨셉</span>
+      <a class="price" href="#film" style="position:static;flex:none;text-decoration:none">영상 ▶</a>
       <p><b>황학 디깅하우스</b> · 동묘 구제, 창신 문구, 중앙시장에서 산 물건을 펼쳐 보고 찍어서 자랑하는 ‘하울(haul) 베이스캠프’입니다. 음료는 매일 바뀌는 황학동 중고 찻잔에 담아 내고, 마음에 드는 잔은 사 갈 수 있습니다.</p>
     </div>
   </div>
@@ -513,50 +643,403 @@ footer{padding-block:40px;font-size:13px;color:var(--muted)}
   </div>
 </section>
 
+<!-- ================= PART 2 · 사업 전략 ================= -->
+<div class="part-band" id="part2">
+  <div class="wrap">
+    <span class="eyebrow">Part 2 · 사업 전략</span>
+    <p class="part-title">어디에 열지 정했습니다.<br>이제 어떻게 이길지 정합니다.</p>
+    <div class="answers">
+      <div><span>‘뜬다’란</span><b>재방문 · 체류 · 원주민 유지</b></div>
+      <div><span>가격</span><b>입구는 상인가, 안쪽은 체험 프리미엄</b></div>
+      <div><span>1차 타깃</span><b>2030 디거</b></div>
+      <div><span>CAPEX</span><b class="mono">1.2억 (보증금 포함)</b></div>
+      <div><span>손익분기</span><b class="mono">월 1,660만 원</b></div>
+      <div><span>엑싯</span><b>프랜차이즈 X · 브랜드 자산화</b></div>
+    </div>
+  </div>
+</div>
+
+<!-- 08 뜬다의 정의 -->
+<section id="define">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">08 · 정의</div>
+      <h2>‘뜬다’는 검색량이 아닙니다</h2>
+      <p class="lede">소크라테스 관점의 문답에서 모순이 드러났습니다. 매출이 2배가 되고 임대료가 3배가 되면 건물주에게는 뜬 것이고 창업자에게는 진 것입니다. 그래서 이 프로젝트에서 쓸 ‘뜬다’를 측정 가능한 정의로 다시 세웠습니다.</p>
+    </div>
+    <div class="define">
+      <div class="dcol bad">
+        <span class="eyebrow">징후 · 경보로만 사용</span>
+        <ul><li>검색량, 해시태그 수</li><li>외국인 카드소비 증가율</li><li>‘제2의 성수’ 기사 수</li></ul>
+        <p class="src">구경하러 온 사람도 검색합니다. 검색이 많은데 카페 앞이 비어 있을 수 있습니다.</p>
+      </div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="dcol good">
+        <span class="eyebrow">우리의 조작적 정의 · 셋 다 충족</span>
+        <ol>
+          <li><b>반복</b><span>3개월 안에 다시 오는 방문객 <span class="mono">30%+</span></span></li>
+          <li><b>체류</b><span>평균 체류 <span class="mono">90분+</span>, 1인 소비 <span class="mono">+30%</span></span></li>
+          <li><b>공존</b><span>임대료 상승률 &lt; 매출 상승률, 기존 업종 유지율 <span class="mono">70%+</span></span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="insight">
+      <span class="price" style="position:static">인사이트</span>
+      <p>이 벨트의 매력은 낡고, 싸고, 날것이라는 점입니다. 성수처럼 완전히 뜨면 그 매력은 사라집니다. 그래서 우리 카페는 상권이 <b>너무 뜨지 않도록 돕는 쪽</b>에 섭니다. 상인과 수익을 나누고, 원주민 업종을 손님 동선에 넣습니다. 구제상과 주방가구점이 남아 있어야 우리 손님도 계속 옵니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 09 포지셔닝 -->
+<section id="position">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">09 · 포지셔닝</div>
+      <h2>하이엔드도 저가도 아닌<br>‘이중 가격 체험형’</h2>
+      <p class="lede">저가 시장에서는 자본과 물량을 가진 프랜차이즈가 이깁니다. 순수 하이엔드로 가면 신당의 힙한 개인 카페와 같은 땅에서 싸우게 됩니다. 아직 아무도 채우지 않은 일이 하나 있습니다. 디깅을 마친 사람이 짐을 풀고, 쉬고, 득템을 자랑하는 일입니다. 우리는 이 일에만 힘을 모읍니다.</p>
+    </div>
+    <div class="pos-grid">
+      <div class="chart pos-map">
+        <div class="eyebrow" style="margin-bottom:8px">경쟁 지도 · 가격 × 머무는 이유</div>
+        <svg viewBox="0 0 520 420" role="img" aria-label="가격과 체류 경험 2x2 포지셔닝 맵">
+          <rect x="60" y="20" width="440" height="340" fill="none" stroke="var(--line)"/>
+          <line x1="280" y1="20" x2="280" y2="360" stroke="var(--line)" stroke-dasharray="4 4"/>
+          <line x1="60" y1="190" x2="500" y2="190" stroke="var(--line)" stroke-dasharray="4 4"/>
+          <text x="280" y="395" text-anchor="middle" class="mut">가격 →</text>
+          <text x="22" y="190" text-anchor="middle" class="mut" transform="rotate(-90 22 190)">머무는 이유(체험) →</text>
+          <text x="70" y="352" class="mut">저가 · 테이크아웃</text>
+          <text x="490" y="352" text-anchor="end" class="mut">고가 · 테이크아웃</text>
+          <text x="70" y="38" class="mut">저가 · 체험</text>
+          <text x="490" y="38" text-anchor="end" class="mut">고가 · 체험</text>
+          <circle cx="120" cy="320" r="26" fill="var(--muted)" opacity=".35"/><text x="120" y="324" text-anchor="middle">저가 프랜차이즈</text>
+          <circle cx="160" cy="250" r="20" fill="var(--muted)" opacity=".35"/><text x="160" y="254" text-anchor="middle">노포 다방</text>
+          <circle cx="330" cy="240" r="22" fill="var(--muted)" opacity=".35"/><text x="330" y="244" text-anchor="middle">중간가 카페</text>
+          <circle cx="430" cy="110" r="28" fill="var(--muted)" opacity=".35"/><text x="430" y="114" text-anchor="middle">신당 감성 카페</text>
+          <path d="M150 300 C 220 200, 280 120, 330 85" fill="none" stroke="var(--tag)" stroke-width="3" stroke-dasharray="6 5"/>
+          <circle cx="150" cy="300" r="9" fill="var(--tag)"/>
+          <circle cx="330" cy="85" r="34" fill="var(--tarp)"/>
+          <text x="330" y="82" text-anchor="middle" style="fill:var(--tarp-ink);font-weight:600">황학</text>
+          <text x="330" y="97" text-anchor="middle" style="fill:var(--tarp-ink);font-size:10px">디깅하우스</text>
+          <text x="160" y="292" style="font-size:11px">상인가 입구</text>
+          <text x="330" y="355" text-anchor="middle" style="fill:var(--warn);font-size:11px">도태 구간(중간가)</text>
+        </svg>
+      </div>
+      <div class="ladder">
+        <div class="eyebrow">가격 사다리</div>
+        <div class="rung"><span class="mono">3,000</span><div><b>상인 선불권</b><p>10잔에 3만 원. 노포 다방과 싸우지 않는 동맹 비용입니다.</p></div></div>
+        <div class="rung"><span class="mono">4,000</span><div><b>오늘의 아메리카노</b><p>입구 가격입니다. 프랜차이즈 평균 3,001원보다 1,000원 높습니다.</p></div></div>
+        <div class="rung hi"><span class="mono">7,500–8,500</span><div><b>시그니처 + 빈티지 잔</b><p>객단가를 끌어올리는 체험 메뉴입니다. 잔을 사 가면 잔값을 따로 받습니다.</p></div></div>
+        <div class="rung hi"><span class="mono">12,000–15,000</span><div><b>하울 세트</b><p>음료, 디저트, 촬영 트레이, 짐 보관을 묶었습니다.</p></div></div>
+        <p class="src">목표 가중 객단가는 <b class="mono">8,500원</b>입니다. 디거와 외국인은 9,000~11,000원, 상인은 3,000~4,000원으로 봤습니다.</p>
+      </div>
+    </div>
+    <div class="why3">
+      <div><b>왜 저가가 아닌가</b><p>저가커피 프랜차이즈는 정점을 지났습니다. 2025년 4분기에 1년 전보다 368곳이 줄었습니다. 2층 매장은 노출과 회전이 약해 물량 싸움에서 집니다.</p></div>
+      <div><b>왜 하이엔드 단독이 아닌가</b><p>상인과 노년층을 잃습니다. 원주민이 빠진 동묘는 더 이상 동묘가 아닙니다.</p></div>
+      <div><b>왜 중간가는 피하나</b><p>카페 5년 생존율은 34.6%입니다. 어중간한 품질과 가격대가 가장 먼저 도태됩니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 공간 -->
+<section id="space">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">10 · 매장 분위기</div>
+      <h2>감성 우드톤 대신<br>‘시장 창고 라운지’</h2>
+      <p class="lede">이 동네의 재료로만 만듭니다. 주방가구거리의 스테인리스, 중고 집기, 시장의 파란 천막, 노란 가격표가 재료입니다. 인테리어비를 아끼는 방법이자 다른 곳이 따라 할 수 없는 장소성입니다.</p>
+    </div>
+    <div class="space-grid">
+      <div class="chart floor">
+        <div class="eyebrow" style="margin-bottom:8px">2층 35평 존 구성 (안)</div>
+        <svg viewBox="0 0 560 330" role="img" aria-label="매장 평면 존 구성">
+          <rect x="10" y="10" width="540" height="310" rx="6" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <rect x="20" y="20" width="160" height="110" rx="4" fill="var(--soft)"/><text x="100" y="70" text-anchor="middle">① 짐 보관 · 충전</text><text x="100" y="90" text-anchor="middle" class="mut">락커 24칸</text>
+          <rect x="190" y="20" width="350" height="110" rx="4" fill="var(--tag)" opacity=".85"/><text x="365" y="70" text-anchor="middle" style="fill:var(--tag-ink);font-weight:600">② 하울 테이블 (공용 12석)</text><text x="365" y="90" text-anchor="middle" style="fill:var(--tag-ink)">조명 · 촬영 트레이 · 거울</text>
+          <rect x="20" y="140" width="160" height="170" rx="4" fill="var(--tarp)"/><text x="100" y="220" text-anchor="middle" style="fill:var(--tarp-ink);font-weight:600">③ 빈티지 잔 벽</text><text x="100" y="240" text-anchor="middle" style="fill:var(--tarp-ink)">진열 = 판매대</text>
+          <rect x="190" y="140" width="200" height="170" rx="4" fill="var(--soft)"/><text x="290" y="215" text-anchor="middle">④ 라운지 좌석 20석</text><text x="290" y="235" text-anchor="middle" class="mut">저녁엔 대관 · 플리마켓</text>
+          <rect x="400" y="140" width="140" height="170" rx="4" fill="none" stroke="var(--muted)" stroke-dasharray="5 4"/><text x="470" y="215" text-anchor="middle">⑤ 바 · 픽업</text><text x="470" y="235" text-anchor="middle" class="mut">스테인리스 바</text>
+        </svg>
+      </div>
+      <div class="mood">
+        <div class="sw" style="background:#1C45C9;color:#fff">천막 블루<small>시장 차양</small></div>
+        <div class="sw" style="background:#FFB81C;color:#1B1505">가격표 옐로<small>손글씨 사인</small></div>
+        <div class="sw" style="background:#B9BEC4;color:#14161A">주방 스테인리스<small>황학동 중고 집기</small></div>
+        <div class="sw" style="background:#7A4B2A;color:#fff">빈티지 갈색 잔<small>70~90년대 국산 도자기</small></div>
+        <ul class="mood-rules">
+          <li><b>소리</b> · 시장 소음을 막지 않고 창을 엽니다. 음악은 80~90년대 시티팝입니다.</li>
+          <li><b>조명</b> · 하울 테이블만 밝게 둡니다. 사진이 잘 나오는 자리를 한 곳으로 모읍니다.</li>
+          <li><b>사인</b> · 손글씨 가격표와 4개 국어 그림 메뉴를 씁니다.</li>
+          <li><b>금지</b> · 우드톤 미니멀, 네온사인, 인조 식물. 어디에나 있는 감성은 쓰지 않습니다.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 동네 연결 -->
+<section id="connect">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">11 · 동네와 연결</div>
+      <h2>카페가 아니라<br>벨트의 ‘안내데스크’가 됩니다</h2>
+      <p class="lede">손자 관점의 결론은 싸우지 않고 이기는 것입니다. 주변 상점을 경쟁자가 아니라 동맹으로 만들고, 그 관계를 해자로 삼습니다.</p>
+    </div>
+    <div class="chart">
+      <svg viewBox="0 0 900 360" role="img" aria-label="카페와 주변 상권의 연결 네트워크">
+        <g stroke="var(--line)" stroke-width="2">
+          <line x1="450" y1="180" x2="140" y2="70"/><line x1="450" y1="180" x2="140" y2="290"/>
+          <line x1="450" y1="180" x2="760" y2="70"/><line x1="450" y1="180" x2="760" y2="290"/>
+          <line x1="450" y1="180" x2="450" y2="40"/><line x1="450" y1="180" x2="450" y2="330"/>
+        </g>
+        <circle cx="450" cy="180" r="62" fill="var(--tarp)"/>
+        <text x="450" y="176" text-anchor="middle" style="fill:var(--tarp-ink);font-weight:600;font-size:15px">황학</text>
+        <text x="450" y="196" text-anchor="middle" style="fill:var(--tarp-ink);font-size:13px">디깅하우스</text>
+        <g>
+          <rect x="30" y="40" width="220" height="60" rx="8" fill="var(--paper)" stroke="var(--line)"/><text x="140" y="66" text-anchor="middle" style="font-weight:600">동묘 구제상</text><text x="140" y="86" text-anchor="middle" class="mut">영수증 보여주면 음료 할인</text>
+          <rect x="30" y="260" width="220" height="60" rx="8" fill="var(--paper)" stroke="var(--line)"/><text x="140" y="286" text-anchor="middle" style="font-weight:600">황학동 주방·그릇 상점</text><text x="140" y="306" text-anchor="middle" class="mut">빈티지 잔 매주 매입</text>
+          <rect x="650" y="40" width="220" height="60" rx="8" fill="var(--paper)" stroke="var(--line)"/><text x="760" y="66" text-anchor="middle" style="font-weight:600">신당 중앙시장</text><text x="760" y="86" text-anchor="middle" class="mut">가래떡·들기름·쌍화 재료</text>
+          <rect x="650" y="260" width="220" height="60" rx="8" fill="var(--paper)" stroke="var(--line)"/><text x="760" y="286" text-anchor="middle" style="font-weight:600">창신 문구완구거리</text><text x="760" y="306" text-anchor="middle" class="mut">말랑이 푸딩 컬래버</text>
+          <rect x="350" y="8" width="200" height="40" rx="8" fill="var(--tag)"/><text x="450" y="33" text-anchor="middle" style="fill:var(--tag-ink);font-weight:600">상인 선불권 · 도보 배달</text>
+          <rect x="350" y="312" width="200" height="40" rx="8" fill="var(--tag)"/><text x="450" y="337" text-anchor="middle" style="fill:var(--tag-ink);font-weight:600">4개 국어 디깅 지도</text>
+        </g>
+      </svg>
+    </div>
+    <div class="why3">
+      <div><b>상점이 얻는 것</b><p>손님이 짐을 맡기고 가벼워진 손으로 한 바퀴 더 돕니다. 상점 입장에서는 체류 시간과 객단가가 늘어납니다.</p></div>
+      <div><b>우리가 얻는 것</b><p>영수증 제휴로 손님이 들어오고, 잔과 재료를 들여올 거래처가 생깁니다. 프랜차이즈는 이런 관계를 규모로 복제할 수 없습니다.</p></div>
+      <div><b>동네가 얻는 것</b><p>원주민 업종이 손님 동선 안에 남습니다. 08에서 정한 ‘공존’ 지표를 우리가 직접 지킵니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 타깃 & M/S -->
+<section id="target">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">12 · 타깃과 점유율</div>
+      <h2>한 고객에게 집중하고,<br>우리가 만든 시장을 잽니다</h2>
+      <p class="lede">드러커 관점의 처방은 이렇습니다. 네 고객군을 동시에 노리면 힘이 흩어질 뿐입니다. 1차 고객이 검증되기 전에는 한 고객에게만 집중합니다.</p>
+    </div>
+    <div class="tgrid">
+      <div class="tcard first"><span class="eyebrow">1차 타깃</span><b>2030 디거</b><p>동묘 구제와 말랑이 쇼핑을 하는 2030입니다. 이들이 이 카페를 쓰는 진짜 이유는 <b>득템을 펼쳐서 찍을 자리</b>가 필요해서입니다. 중앙시장 방문객의 48%가 MZ세대입니다.</p></div>
+      <div class="tcard"><span class="eyebrow">파트너 (고객 아님)</span><b>지역 상인</b><p>상인은 선불권과 영수증 제휴로 손님을 보내 주는 쪽입니다. 평일 고정비의 안전판이기도 합니다.</p></div>
+      <div class="tcard"><span class="eyebrow">2단계 확장</span><b>외국인 관광객</b><p>골목상권 외국인 카드소비가 +80.9% 늘었습니다. 1년차에 디거가 검증된 뒤 다국어 지도로 확장합니다.</p></div>
+    </div>
+    <div class="ms">
+      <div>
+        <div class="eyebrow">M/S 정의</div>
+        <p class="ms-formula">쇼핑 후 체류 점유율 = <span>하루 유료 체류객</span> ÷ <span>벨트 하루 쇼핑객</span></p>
+        <p class="src">벨트 안 카페 매출 점유율은 쓰지 않습니다. 분모에 우리와 상관없는 카페까지 들어가기 때문입니다. 분모(쇼핑객 수)는 오픈 전 8주 동안 주말 유동인구를 직접 세어 확정합니다. 아래는 하루 7,000명을 가정한 값입니다.</p>
+      </div>
+      <div class="ms-bars">
+        <div class="msr"><span class="mono">1년</span><div class="b"><span style="width:33%"></span></div><span class="mono">1% · 70명/일</span></div>
+        <div class="msr"><span class="mono">3년</span><div class="b"><span style="width:67%"></span></div><span class="mono">2% · 100명+ (좌석 상한)</span></div>
+        <div class="msr"><span class="mono">5년</span><div class="b"><span style="width:100%"></span></div><span class="mono">3% · 2호 거점 포함</span></div>
+        <p class="src">1호점 상한은 40석 × 하루 2.5회전 × 가동률 70% ≈ 70명입니다. 3년차부터는 좌석이 아니라 대관과 리테일로 매출을 키웁니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 로드맵 -->
+<section id="roadmap">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">13 · 로드맵</div>
+      <h2>단계마다 ‘그만둘 기준’을 먼저 적었습니다</h2>
+      <p class="lede">탈레브 관점의 경고입니다. 무너지는 지점은 입지가 아니라 자금과 계약 구조입니다. 그래서 각 단계는 다음 단계로 갈지 판정하는 관문을 통과해야만 넘어갑니다.</p>
+    </div>
+    <div class="road">
+      <div class="phase"><span class="ph">Phase 0</span><span class="when mono">2026.11–2027.02</span><b>팝업으로 검증</b><p>기존 공간을 시간 단위로 빌려 주말 팝업을 8주 엽니다. 비용 상한은 500만 원입니다.</p><div class="gate go">통과 기준 · 짐 든 방문객 30% 이상, 제휴 의향 상점 10곳 이상</div><div class="gate stop">미달 시 · 출점하지 않음 (수업료 500만 원)</div></div>
+      <div class="phase"><span class="ph">Phase 1</span><span class="when mono">2027 오픈–12개월</span><b>1호점 검증</b><p>하울 베이스캠프 모델이 돈이 되는지 증명합니다.</p><div class="gate go">KPI · 하루 70명, 3회 이상 재방문 25%, 월 대관 4건</div><div class="gate stop">6개월에 하루 40명 미만이면 · 모델을 재정의하고 확장 중단</div></div>
+      <div class="phase"><span class="ph">Phase 2</span><span class="when mono">13–36개월</span><b>매장 밖 매출</b><p>원두, 빈티지 잔, 굿즈, 대관, 외국인 동선을 늘립니다.</p><div class="gate go">KPI · 리테일과 대관 매출 비중 30%, 제휴 상점 30곳</div><div class="gate stop">디거 재방문이 떨어지면 · 그 확장을 중단</div></div>
+      <div class="phase"><span class="ph">Phase 3</span><span class="when mono">37–60개월</span><b>브랜드화</b><p>2호 거점을 다른 ‘디깅 상권’에 엽니다. 서울풍물시장이나 부산 국제시장 같은 곳입니다. 백화점 팝업도 엽니다.</p><div class="gate go">KPI · 거점별 흑자, 원두 B2B 거래처 20곳</div><div class="gate stop">2호점이 12개월 안에 BEP에 못 닿으면 · 거점 확장 중단</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 CAPEX/OPEX -->
+<section id="money">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">14 · CAPEX · OPEX</div>
+      <h2>들고 나갈 수 있게 투자합니다</h2>
+      <p class="lede">35평 개인 카페의 일반적인 CAPEX는 1.06억~2.13억 원입니다. 우리는 1.2억 원을 상한으로 둡니다. 인테리어는 원형을 살리고, 장비와 가구는 중고나 이동형으로 씁니다. 철수할 때 설비의 절반 이상을 회수하는 것이 목표입니다.</p>
+    </div>
+    <div class="money-grid">
+      <div class="mtable">
+        <div class="eyebrow">CAPEX · 1회성</div>
+        <table>
+          <tbody>
+            <tr><td>인테리어 (원형 활용, 평당 약 100만 원 + 노후 보강)</td><td class="mono r">4,000만</td></tr>
+            <tr><td>장비 (중고 혼합 · 머신·그라인더·오븐·제빙기)</td><td class="mono r">2,500만</td></tr>
+            <tr><td>가구·락커·첫 빈티지 잔 300개 (황학동 중고)</td><td class="mono r">1,200만</td></tr>
+            <tr><td>인허가·초도물품·오픈 마케팅</td><td class="mono r">800만</td></tr>
+            <tr><td>Phase 0 팝업 검증비</td><td class="mono r">500만</td></tr>
+            <tr><td>보증금 (2층 공실 · 권리금 0 타깃)</td><td class="mono r">3,000만</td></tr>
+            <tr class="sum"><td>합계</td><td class="mono r">1억 2,000만</td></tr>
+          </tbody>
+        </table>
+        <p class="src">평당 인테리어 시세는 120만~150만 원, 10평 기준 장비 신품은 1,500만~2,500만 원입니다(2026, 업계 견적 자료). 황학동 1층과 지층 32평 매물은 보증금 1,000만 원에 월세 140만 원입니다(당근부동산).</p>
+      </div>
+      <div class="mtable">
+        <div class="eyebrow">OPEX · 월 고정비</div>
+        <table>
+          <tbody>
+            <tr><td>임대료+관리비 (월세 220만 + VAT)</td><td class="mono r">250만</td></tr>
+            <tr><td>인건비 2.5 FTE × 258만 원</td><td class="mono r">645만</td></tr>
+            <tr><td>전기·수도·가스</td><td class="mono r">90만</td></tr>
+            <tr><td>POS·세무·보험·마케팅</td><td class="mono r">80만</td></tr>
+            <tr class="sum"><td>월 고정비</td><td class="mono r">1,065만</td></tr>
+            <tr><td>변동비율 (원가 32% + 카드·포장 4%)</td><td class="mono r">36%</td></tr>
+            <tr class="sum hi"><td>손익분기 월매출 = 1,065 ÷ 0.64</td><td class="mono r">1,664만</td></tr>
+            <tr><td>감가상각 포함 (설비 9,000만 ÷ 60개월)</td><td class="mono r">1,898만</td></tr>
+          </tbody>
+        </table>
+        <p class="src">2026년 최저임금은 시급 10,320원(월 2,156,880원)입니다. 사업주 4대보험 약 11.4%와 퇴직충당금을 더해 1인당 258만 원으로 잡았습니다. 점주 급여는 넣지 않았습니다.</p>
+      </div>
+    </div>
+    <div class="lease">
+      <b>계약 구조로 두 관점을 함께 잡습니다</b>
+      <p>탈레브 관점은 “짧게 묶어 옵션을 남겨라”이고, 막스 관점은 “5년 이상 묶어 임대료를 막아라”입니다. 둘을 함께 잡는 방법은 <b>상가건물임대차보호법</b>을 쓰는 것입니다. 첫 계약은 2년으로 짧게 합니다. 대신 법이 보장하는 최대 10년 계약갱신요구권과 증액 상한 5%로 장기 보호를 받습니다. 서울은 환산보증금 9억 원 이하일 때 증액 상한이 적용되고, 우리는 약 2.5억 원이라 해당됩니다. 상황이 나빠지면 2년 뒤 나가고, 좋아지면 10년까지 버팁니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 15 메뉴 -->
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">15 · 메뉴 구성</div>
+      <h2>메뉴는 18개 이하,<br>모든 메뉴에 동네 재료를 넣습니다</h2>
+      <p class="lede">메뉴를 늘려 일반 카페처럼 싸우지 않습니다. 고객이 이곳을 찾는 이유와 시장 재료로만 메뉴를 짭니다.</p>
+    </div>
+    <div class="board">
+      <div class="mcat"><span class="eyebrow">COFFEE · 6</span><ul><li>오늘의 아메리카노 <i>4,000</i></li><li>상인 선불권 10잔 <i>30,000</i></li><li>동묘 쌍화 라떼 <i>8,000</i></li><li>들기름 크림 라떼 <i>7,500</i></li><li>디카페인 전 메뉴 <i>+500</i></li><li>핸드드립 (원두 판매) <i>6,500</i></li></ul></div>
+      <div class="mcat"><span class="eyebrow">NON-COFFEE · 4</span><ul><li>시장 약차 라떼 (보리·대추) <i>7,000</i></li><li>입가심 티 쿨러 <i>6,500</i></li><li>쌍화 밀크티 <i>7,000</i></li><li>어린이·어르신 식혜 <i>4,500</i></li></ul></div>
+      <div class="mcat"><span class="eyebrow">DESSERT · 4</span><ul><li>가래떡 아포가토 <i>7,500</i></li><li>말랑 푸딩 (월 색상) <i>6,500</i></li><li>중앙시장 약과 스콘 <i>5,000</i></li><li>떡 모나카 <i>4,500</i></li></ul></div>
+      <div class="mcat hi"><span class="eyebrow">HAUL SET · 4</span><ul><li>하울 세트 (음료+디저트+트레이+보관) <i>13,000</i></li><li>2인 하울 세트 <i>24,000</i></li><li>빈티지 잔 구매 <i>12,000–25,000</i></li><li>원두 200g · 드립백 <i>14,000</i></li></ul></div>
+    </div>
+    <p class="src" style="margin-top:10px">음료 원가율은 아메리카노 약 15%, 라떼 약 25%이고 디저트는 35~45%입니다(토스플레이스 등). 디카페인과 차를 기본 축으로 넣은 이유는 디카페인 비중이 1.1%에서 3.4%로 늘었고(2018→2023) 차 전문 카페가 떠오르고 있어서입니다.</p>
+  </div>
+</section>
+
+<!-- 16 매출 구성 -->
+<section id="revenue">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">16 · 매출 구성</div>
+      <h2>3년 안에 커피 외 매출 1/3</h2>
+      <p class="lede">좌석은 70명에서 막힙니다. 그다음 성장은 잔, 원두, 대관에서 나옵니다. 이 매출은 상권의 유행과 연동성이 낮은 자산입니다.</p>
+    </div>
+    <div class="rev">
+      <div class="revrow"><span class="yr mono">1년차<small>월 2,300만</small></span>
+        <div class="stack"><span style="flex:54;background:var(--tarp)">음료 54%</span><span style="flex:24;background:color-mix(in srgb,var(--tarp) 55%,var(--soft))">디저트 24%</span><span style="flex:11;background:var(--tag);color:var(--tag-ink)">리테일 11%</span><span style="flex:9;background:var(--muted)">대관 9%</span><span style="flex:2;background:var(--line)"></span></div></div>
+      <div class="revrow"><span class="yr mono">3년차<small>월 3,300만</small></span>
+        <div class="stack"><span style="flex:46;background:var(--tarp)">음료 46%</span><span style="flex:21;background:color-mix(in srgb,var(--tarp) 55%,var(--soft))">디저트 21%</span><span style="flex:18;background:var(--tag);color:var(--tag-ink)">리테일 18%</span><span style="flex:12;background:var(--muted)">대관 12%</span><span style="flex:3;background:var(--line)"></span></div></div>
+      <p class="src">리테일은 빈티지 잔, 원두, 굿즈이고, 대관은 디깅 나잇, 클래스, 브랜드 팝업입니다. 남은 2~3%는 상인 선불권과 원두 B2B입니다.</p>
+    </div>
+    <div class="pnl">
+      <div><span class="eyebrow">1년차 월 영업이익</span><b class="mono">약 410만</b><p>2,300 × 0.64 − 1,065. 감가상각 전, 점주 급여 전 기준입니다.</p></div>
+      <div><span class="eyebrow">3년차 월 영업이익</span><b class="mono">약 800만</b><p>3,300 × 0.62 − 1,250. 리테일 원가와 인력 증가를 반영했습니다.</p></div>
+      <div><span class="eyebrow">투자 회수</span><b class="mono">약 22개월</b><p>보증금을 뺀 설비 9,000만 ÷ 1년차 월 410만으로 계산했습니다.</p></div>
+    </div>
+    <p class="src">모든 수치는 근거 자료에 가정을 더한 계획값입니다. 매출 1,800만 원(음료와 디저트) = 하루 70명 × 객단가 8,500원 × 30일입니다. Phase 0 팝업에서 실측해 보정합니다.</p>
+  </div>
+</section>
+
+<!-- 17 엑싯 -->
+<section id="exit">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">17 · 엑싯 전략</div>
+      <h2>프랜차이즈는 하지 않습니다.<br>치고 빠지기는 비상구로만 둡니다</h2>
+      <p class="lede">이 컨셉의 가치는 희소성입니다. 가맹은 그 희소성을 팔아 현금을 미리 당겨 쓰는 일입니다. 그래서 브랜드를 자산으로 쌓는 것을 뼈대로 삼고, 상권이 정점에 이르면 빠져나올 비상구를 미리 설계합니다.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table class="exit-t">
+        <thead><tr><th>경로</th><th>기간</th><th>기대 가치</th><th>근거 사례</th><th>판정</th></tr></thead>
+        <tbody>
+          <tr><td><b>C. 프랜차이즈</b></td><td>5–8년</td><td>본부 EBITDA 7–10배</td><td>컴포즈 4,700억(2024). 하지만 상위 10개 브랜드 가맹점 폐업률이 2.4%에서 4.6%로 늘었고, 평균 영업기간은 535–1,142일입니다.</td><td><span class="pill no">하지 않음</span></td></tr>
+          <tr><td><b>A. 치고 빠지기</b></td><td>1–3년</td><td>권리금 수천만~수억 원</td><td>성수 7평 권리금 4.2억(2024). 하지만 임대료도 함께 올라 권리금 이익을 상당 부분 깎아 먹습니다.</td><td><span class="pill mid">비상구</span></td></tr>
+          <tr><td><b>E. 원두·잔·굿즈 브랜드</b></td><td>상시</td><td>상권 사이클과 분리된 자산</td><td>프릳츠 도매 약 850곳, 테라로사 코스트코 드립백</td><td><span class="pill yes">뼈대</span></td></tr>
+          <tr><td><b>B. 직영 거점 → 매각</b></td><td>5–7년</td><td>영업이익의 약 8배</td><td>런던베이글뮤지엄은 영업이익 243억 원 상태에서 약 2,000억 원에 매각됐습니다(2025, JKL)</td><td><span class="pill yes">조건부 업사이드</span></td></tr>
+          <tr><td><b>D. 건물 동반 매입</b></td><td>장기</td><td>상권 상승분 직접 흡수</td><td>레버리지를 쓰면 하락기에 영구 손실이 납니다</td><td><span class="pill mid">자기자본일 때만</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="exit-grid">
+      <div class="signals">
+        <div class="eyebrow">팔아야 할 신호 · 5개 중 2개 이상이면 축소나 이전</div>
+        <ol>
+          <li>권리금 호가가 진입 시점의 3배 이상</li>
+          <li>임대료 상승률이 매출 상승률을 넘어섬</li>
+          <li>저가·대형 프랜차이즈가 골목 안에 입점</li>
+          <li>방송과 중개소에서 ‘제2의 성수’라는 말이 쏟아짐</li>
+          <li>공실이 늘어나는데 호가는 내려가지 않음</li>
+        </ol>
+      </div>
+      <div class="exit-flow">
+        <div class="eyebrow">추천 경로</div>
+        <div class="flow"><span>1호점 + 원두·잔 브랜드</span><i>→</i><span>2호점이 1호점만큼 벌면</span><i>→</i><span>직영 5–8거점 + 리테일</span><i>→</i><span class="end">PE 소수지분 또는 매각</span></div>
+        <p class="src">테라로사는 700억 원을 투자받았고, 텐퍼센트커피 창업자는 지분 40%를 유지했습니다. 이처럼 소수지분 투자를 받아 2차 엑싯 옵션을 남깁니다. 2호점이 실패하면 1호점은 신호를 보고 권리금을 받고 양도하고, 원두 브랜드는 계속 가져갑니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 18 페르소나 토론 -->
+<section id="council">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">18 · 멀티 페르소나 토론</div>
+      <h2>8명이 부딪힌 지점과 결론</h2>
+      <p class="lede">리서치 에이전트 6개가 숫자를 모았습니다. 서로 다른 관점의 자문 페르소나 8명이 그 숫자를 공격했습니다. 의견이 갈린 곳에서 전략이 날카로워졌습니다.</p>
+    </div>
+    <div class="debate">
+      <div class="db"><span class="topic">1순위 상권</span><p><b>카너먼 관점</b> “창동은 매끄러운 이야기일 뿐이다.” <b>멍거 관점</b> “아레나는 공연장이지 상권이 아니다.”</p><p class="res">결론 · 창동을 1순위에서 조건부 2순위로 내리고, 수요가 확인된 황학·동묘를 1순위로 올림</p></div>
+      <div class="db"><span class="topic">임대 계약</span><p><b>탈레브 관점</b> “짧게 묶어 옵션을 남겨라.” <b>막스 관점</b> “길게 묶어 임대료를 막아라.”</p><p class="res">결론 · 2년 계약 + 법정 10년 갱신요구권 + 증액 상한 5%</p></div>
+      <div class="db"><span class="topic">상인의 역할</span><p><b>손자 관점</b> “상인가로 동맹을 사라.” <b>드러커 관점</b> “상인은 고객이 아니다. 타깃을 흩뜨리지 마라.”</p><p class="res">결론 · 상인은 파트너로 두고 선불권만 운영. 1차 타깃은 디거 하나</p></div>
+      <div class="db"><span class="topic">뜬다의 정의</span><p><b>소크라테스 관점</b> “뜨는 것이 곧 소멸의 시작 아닌가?”</p><p class="res">결론 · 검색량은 경보로만 쓰고, 반복·체류·공존 세 가지로 정의. 카페가 공존을 직접 지킴</p></div>
+      <div class="db"><span class="topic">엑싯</span><p><b>막스 관점</b> “프랜차이즈는 희소성을 판다.” <b>크리스텐슨 관점</b> “복제되는 순간 고객이 이곳을 찾을 이유가 사라진다.”</p><p class="res">결론 · 가맹은 하지 않고, 직영과 리테일 브랜드로 감</p></div>
+      <div class="db"><span class="topic">컨셉 범위</span><p><b>크리스텐슨 관점</b> “고객군 4개를 한 매장에 얹으면 속성 나열이 된다.”</p><p class="res">결론 · 고객이 이곳을 찾는 이유를 ‘득템을 펼쳐 자랑하는 일’ 하나로 좁힘</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 19 전달 설계 -->
+<section id="deliver">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">19 · 전달 설계</div>
+      <h2>30초, 3분, 10분에 맞춰<br>세 겹으로 전달합니다</h2>
+      <p class="lede">심사위원이 30초만 봐도 핵심이 전달되도록 만들었습니다. 더 오래 보면 근거와 숫자가 차례로 펼쳐집니다.</p>
+    </div>
+    <div class="layers">
+      <div><span class="mono">30초</span><b>첫 화면 + 영상</b><p>“성수 다음은 동묘까지 이어지는 디깅 벨트다”라는 결론, 가격표 3개(82, 70, 66점), 컨셉 한 줄을 보여 줍니다. 영상이 같은 이야기를 감각으로 전합니다.</p></div>
+      <div><span class="mono">3분</span><b>Part 2 요약 띠 + 차트</b><p>‘뜬다’의 정의, 포지셔닝 맵, 매출 구성 막대, 엑싯 판정 배지까지 표와 그림만 따라가도 결론이 읽힙니다.</p></div>
+      <div><span class="mono">10분</span><b>시뮬레이터 + 근거</b><p>가중치를 직접 바꿔 보고, 사전 부검과 페르소나 토론, 출처 22개로 검증합니다. 반박에 대한 답이 미리 들어 있습니다.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- 모션 그래픽 -->
 <section id="film">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">06 · 프로모 필름 · 30초</div>
-      <h2>디깅 벨트 30초 모션 그래픽</h2>
-      <p class="lede">제안 상권을 알리는 30초 모션 그래픽입니다. 재생 버튼을 누르면 시작합니다.</p>
+      <div class="eyebrow">20 · 프로모 필름 · 48초</div>
+      <h2>디깅 벨트 프로모션 영상</h2>
+      <p class="lede">제안 상권과 매장을 알리는 모션 그래픽 영상입니다. 상권이 뒤집힌 순간, 매출, 1.5km 벨트, 문제, 브랜드, 메뉴, 로드맵 순서로 9개 장면이 이어집니다. 1080p 영상이며 배경음이 있습니다.</p>
     </div>
-    <div class="film" id="film-stage">
-      <div class="grain"></div>
-      <div class="scene on" data-s="0"><div class="t1 pop">성수 <span class="y">다음은</span>?</div><div class="t2">SEOUL · 2026 → 2029</div></div>
-      <div class="scene" data-s="1">
-        <div class="t1">2026년 5월, <span class="y">순위가 뒤집혔다</span></div>
-        <div class="race">
-          <div class="r"><span>동묘</span><div class="tr"><span style="--w:100%;background:#FFC23D"></span></div><span>68,000</span></div>
-          <div class="r"><span>성수</span><div class="tr"><span style="--w:79%;background:#6F7682"></span></div><span>53,600</span></div>
-        </div>
-        <div class="t2">네이버 월간 검색량</div>
-      </div>
-      <div class="scene" data-s="2"><div class="t1 pop">시장 매출 <span class="y">+117%</span><br>방문객 <span class="bl">MZ 48%</span></div><div class="t2">신당 중앙시장 · 2019 → 2023</div></div>
-      <div class="scene" data-s="3">
-        <div class="t1" style="font-size:clamp(20px,4vw,44px)">청계천을 따라 <span class="y">1.5km</span></div>
-        <svg class="mapline" viewBox="0 0 760 170" aria-hidden="true">
-          <path d="M60 110 C 220 40, 360 150, 520 80 S 700 60, 710 70" fill="none" stroke="#FFC23D" stroke-width="6" stroke-linecap="round"/>
-          <circle cx="60" cy="110" r="10" fill="#8EA6FF"/><circle cx="380" cy="104" r="12" fill="#FFC23D"/><circle cx="710" cy="70" r="10" fill="#8EA6FF"/>
-          <text x="30" y="148">신당 중앙시장</text><text x="335" y="148">황학동</text><text x="650" y="112">동묘·창신</text>
-        </svg>
-        <div class="t2">DIGGING BELT</div>
-      </div>
-      <div class="scene" data-s="4"><div class="t1 pop">사고, 펼치고, <span class="y">자랑하고</span></div><div class="t2">빈티지 잔에 담아 내는 쌍화 라떼 · 가래떡 아포가토 · 말랑 푸딩</div></div>
-      <div class="scene" data-s="5"><div class="t1 pop"><span class="y">황학 디깅하우스</span></div><div class="t2">신당과 동묘 사이 · 하울 베이스캠프 · 2027 OPEN</div></div>
-      <div class="film-ui">
-        <button type="button" id="filmPlay" aria-label="재생">▶ 재생</button>
-        <div class="prog"><span id="filmProg"></span></div>
-        <span class="time" id="filmTime">0:00</span>
-      </div>
-    </div>
+    <div class="video-wrap"><video controls playsinline preload="metadata" poster="poster.jpg" src="hwanghak_promo.mp4"></video></div>
   </div>
 </section>
 
 <!-- 출처 -->
 <section id="sources">
   <div class="wrap">
-    <div class="sec-head"><div class="eyebrow">07 · 출처</div><h2>근거 자료</h2><p class="lede">모든 숫자는 아래 보도와 기관 자료에서 가져왔습니다. 수치 옆의 날짜는 자료의 기준 시점입니다.</p></div>
+    <div class="sec-head"><div class="eyebrow">21 · 출처</div><h2>근거 자료</h2><p class="lede">모든 숫자는 아래 보도와 기관 자료에서 가져왔습니다. 수치 옆의 날짜는 자료의 기준 시점입니다.</p></div>
     <ol class="srcs">
       <li>동묘 검색량의 성수 추월, 창신 문구거리 공실 0% · 한국경제 2026-06-17 <a href="https://www.hankyung.com/article/2026061723367">hankyung.com</a></li>
       <li>신당 상권 매출, 중앙시장 +117%, MZ 48% · KB Think 2024-05 <a href="https://kbthink.com/main/asset-management/for-manager/dicon_ceo_content/ceo_content_business_zone_analysis/2024/business-zone-202405.html">kbthink.com</a></li>
@@ -584,7 +1067,7 @@ footer{padding-block:40px;font-size:13px;color:var(--muted)}
   </div>
 </section>
 
-<footer><div class="wrap">상권 레이더 2029 · 조별 과제 「서울의 다음 핫플레이스를 찾아라」 · 2026.10 · 리서치 에이전트 4개와 자문 페르소나 3명이 함께 작업</div></footer>
+<footer><div class="wrap">상권 레이더 2029 · 조별 과제 「서울의 다음 핫플레이스를 찾아라」 · 2026.10 · 리서치 에이전트 6개와 자문 페르소나 8명이 함께 작업</div></footer>
 
 <script>
 (function(){
@@ -628,28 +1111,6 @@ footer{padding-block:40px;font-size:13px;color:var(--muted)}
   document.getElementById('bEqual').onclick=()=>set({rent:15,fnb:15,stock:15,mz:15,cat:15,sns:15});
   render();
 
-  // film
-  const scenes=[...document.querySelectorAll('#film-stage .scene')];
-  const DUR=30000, per=DUR/scenes.length;
-  const btn=document.getElementById('filmPlay'),prog=document.getElementById('filmProg'),tm=document.getElementById('filmTime');
-  let start=null,raf=null,playing=false,elapsed=0;
-  function show(i){scenes.forEach((s,j)=>s.classList.toggle('on',j===i))}
-  function tick(ts){
-    if(start===null)start=ts-elapsed;
-    elapsed=ts-start;
-    if(elapsed>=DUR){elapsed=DUR;stop(true);return}
-    const i=Math.min(scenes.length-1,Math.floor(elapsed/per));
-    if(!scenes[i].classList.contains('on'))show(i);
-    prog.style.width=(elapsed/DUR*100)+'%';
-    const s=Math.floor(elapsed/1000);tm.textContent='0:'+String(s).padStart(2,'0');
-    raf=requestAnimationFrame(tick);
-  }
-  function stop(done){playing=false;cancelAnimationFrame(raf);start=null;btn.textContent=done?'↺ 다시 보기':'▶ 재생';if(done){elapsed=0;tm.textContent='0:30';prog.style.width='100%'}}
-  btn.addEventListener('click',()=>{
-    if(playing){stop(false);return}
-    if(elapsed===0){show(-1);requestAnimationFrame(()=>show(0))}
-    playing=true;btn.textContent='❚❚ 일시정지';raf=requestAnimationFrame(tick);
-  });
 })();
 </script>
 
