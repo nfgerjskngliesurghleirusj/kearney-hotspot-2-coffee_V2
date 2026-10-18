@@ -125,7 +125,22 @@ html 이랑 영상 줘봐
 **8. 제출**
 ```
 조 번호: 2,
-깃헙에 올려줘: github.com/nfgerjskngliesurghleirusj/kearney-hotspot-2-coffee_V2
+깃헙에 올려줘: github.com/youngmanykim/kearney-hotspot-2-coffee_V2
+```
+
+**9. 권한 추가 후 재시도**
+```
+youngmanykim 계정에서 nfgerjskngliesurghleirusj를 콜라보레이터로 추가하고 초대도 수락했어. 다시 푸시해줘
+```
+
+**10. 업로드 방법 문의**
+```
+내가 GitHub 웹에서 직접 올릴게. 올릴 파일이랑 순서 알려줘
+```
+
+**11. 제출 저장소 변경**
+```
+https://github.com/nfgerjskngliesurghleirusj/kearney-hotspot-2-coffee_V2  여기에 업로드 해줘
 ```
 
 ## 파일 구성
