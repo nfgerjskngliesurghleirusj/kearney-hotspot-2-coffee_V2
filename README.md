@@ -3,7 +3,7 @@
 조별 과제 「서울의 다음 핫플레이스를 찾아라」 제출물입니다.
 향후 3년 안에 뜰 서울 상권 3곳을 고르고, 1순위 상권에 낼 카페 컨셉을 제안합니다.
 
-- 웹사이트: https://youngmanykim.github.io/kearney-hotspot-2-coffee_V2/
+- 웹사이트: https://nfgerjskngliesurghleirusj.github.io/kearney-hotspot-2-coffee_V2/
 - 프로모 영상: `hwanghak_promo_v3.mp4` (74초, 1080p, 웹사이트 첫 화면에 들어 있습니다)
 
 ## 결론
@@ -125,7 +125,7 @@ html 이랑 영상 줘봐
 **8. 제출**
 ```
 조 번호: 2,
-깃헙에 올려줘: github.com/youngmanykim/kearney-hotspot-2-coffee_V2
+깃헙에 올려줘: github.com/nfgerjskngliesurghleirusj/kearney-hotspot-2-coffee_V2
 ```
 
 ## 파일 구성
